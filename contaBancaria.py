@@ -44,9 +44,9 @@ while True:
         elif valor_saque<=0:
             print('\033[1;30;41m Valor Inválido! INFORME UM VALOR VÁLIDO! \033[m')
         elif valor_saque>limite:
-            print('\033[1;30;41m Operação falhou!Valor informado excede o limite diario para saque.\033[m')
+            print('\033[1;30;41m Operação falhou!Valor informado excede o limite para saque.\033[m')
         elif numero_de_saques>=limite_de_saques:
-            print('\033[1;30;41m Operação falhou!Você excedou o número para saques.')
+            print('\033[1;30;41m Operação falhou!Você excedou o número diário para saques.')
         else:
             print(f'\033[1;31;42m Saque de R${valor_saque:.2f} efetuado com sucesso! \033[m')
             numero_de_saques+=1
